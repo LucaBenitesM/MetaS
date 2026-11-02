@@ -19,6 +19,8 @@ Fecha local: 2026-11-02, America/Montevideo. Entorno: Windows, Python 3.12.10, N
 | Dependencias web de producción | `npm audit --omit=dev --audit-level=high`: cero vulnerabilidades reportadas al verificar |
 | OpenAPI | Snapshot generado desde la aplicación |
 | Interfaz | Captura de dashboard inspeccionada visualmente |
+| ZIP limpio | Integridad comprobada; incluye archivos ocultos y excluye DB, sesiones, uploads, dependencias y caches |
+| Instalación desde el ZIP | `npm ci`, TypeScript y build aprobados en carpeta nueva; migración, seed, sesión y dashboard de API comprobados desde la copia extraída |
 
 La suite API cubre sesión ausente/inválida/vencida, revocación, lectura y escritura por tenant, autorización viewer, claves compuestas, catálogo persistente, archivos privados, MIME no confiable, archivos ilegibles y tamaño máximo, reconocimiento limitado de video, presupuestos y edades, reparto ABO/CBO, anuncios duplicados o de otro producto, revisión sin publicación, evaluación sin mutación, deduplicación, aprobación previa, aplicación idempotente, pausas, rechazo, cambios de reglas y concurrencia PostgreSQL.
 
