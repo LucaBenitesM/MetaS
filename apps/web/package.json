@@ -1,0 +1,25 @@
+{
+  "name": "meta-ads-ai-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "next": "16.4.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "prettier": "3.6.2",
+    "typescript": "^5.9.0"
+  }
+}
