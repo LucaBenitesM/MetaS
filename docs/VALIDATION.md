@@ -54,7 +54,7 @@ En esta máquina se usó `E2E_WEB_URL=http://localhost:3001` y `PLAYWRIGHT_CHROM
 ## Límites de la verificación
 
 - Docker no estaba disponible: no se ejecutó Compose ni se construyeron las imágenes localmente. Se incluyen los Dockerfiles, healthchecks y un job de CI para construir/arrancar el stack; no se presenta ese job como ya ejecutado.
-- GitHub CLI estaba instalado pero su token era inválido. No hay repositorio remoto creado, push ni ejecución de CI remota. El código tiene commit Git local y se entrega en ZIP limpio.
+- En la entrega inicial, GitHub CLI estaba instalado pero su token era inválido; esa verificación se realizó con un repositorio Git local y un ZIP limpio, sin CI remota. Posteriormente el propietario creó `LucaBenitesM/MetaS` como repositorio de destino. El estado de CI posterior a la subida se consulta en la pestaña Actions de ese repositorio.
 - No se verificó una instalación de Orca. La importación documentada usa carpeta o Git convencional, sin afirmar compatibilidad con menús de una versión específica.
 - No se probó OAuth, Insights, escritura publicitaria, IA generativa, transcodificación de video ni autenticación comercial porque no están implementados.
 - Starlette emite un aviso de deprecación por su adaptador de tests con HTTPX. Las pruebas pasan; el aviso no implica un adaptador HTTPX2 ya migrado.

@@ -25,7 +25,16 @@ git commit -m "feat: MVP demo de Meta Ads AI"
 
 ## Importación por GitHub
 
-Si tu instalación trabaja solo con remotos, autenticá GitHub y creá el repositorio privado con los comandos del README. Importá su URL privada desde Orca con tu cuenta autorizada. No se inventó ni reservó una URL remota en esta entrega.
+Importá `https://github.com/LucaBenitesM/MetaS` desde Orca y seleccioná la rama `main`. Abrí la raíz del repositorio, donde están `AGENTS.md`, `README.md`, `apps/`, `docs/` y `compose.yaml`.
+
+También podés clonarlo y abrir la carpeta local:
+
+```text
+git clone https://github.com/LucaBenitesM/MetaS.git meta-ads-ai
+cd meta-ads-ai
+```
+
+El repositorio se llama `MetaS`; el producto mantiene el nombre `meta-ads-ai`. No hace falta crear otro repositorio ni subir el ZIP a GitHub.
 
 ## Mensaje inicial para el agente
 

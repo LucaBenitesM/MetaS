@@ -150,36 +150,24 @@ La entrega incluye la carpeta de código y un ZIP limpio. Descomprimí el ZIP y 
 
 1. Leé [docs/ORCA.md](docs/ORCA.md), con comandos y un mensaje inicial listo para tu agente.
 2. Indicá al agente que lea `AGENTS.md`, `README.md`, `docs/PRD.md` y `docs/ROADMAP.md`.
-3. Si Orca solo permite importar por GitHub, seguí el apartado siguiente y usá la URL del repositorio privado.
+3. Para importar desde GitHub, usá `https://github.com/LucaBenitesM/MetaS` y la rama `main`.
 
 No se modificó tu instalación de Orca y no se verificaron nombres de menús de una versión específica. Las instrucciones funcionan mediante carpeta local o URL Git según las opciones de tu instalación.
 
-## GitHub privado
+## Repositorio GitHub
 
-En el entorno de entrega `gh` estaba instalado pero su token era inválido. **No se creó un repositorio remoto ni se subió código.** La carpeta entregada sí se inicializa como repositorio Git local con un commit. El ZIP contiene los archivos versionados, sin `.git`, credenciales, dependencias ni datos de ejecución.
+El repositorio de trabajo elegido por el propietario es [LucaBenitesM/MetaS](https://github.com/LucaBenitesM/MetaS). El nombre del producto y de la carpeta de proyecto sigue siendo `meta-ads-ai`.
 
-Después de autenticar tu cuenta, desde la raíz del proyecto:
-
-```text
-gh auth login --hostname github.com
-gh auth status
-```
-
-Si abriste el ZIP y todavía no hay Git local:
+Para obtener una copia y trabajar desde Orca:
 
 ```text
-git init -b main
-git add .
-git commit -m "feat: MVP demo multiempresa de Meta Ads AI"
+git clone https://github.com/LucaBenitesM/MetaS.git meta-ads-ai
+cd meta-ads-ai
 ```
 
-Finalmente, si ese nombre no existe aún en tu cuenta:
+Abrí esa carpeta en Orca, usá la rama `main` y seguí [docs/ORCA.md](docs/ORCA.md). Los archivos del proyecto se encuentran directamente en la raíz del repositorio, sin una carpeta contenedora adicional.
 
-```text
-gh repo create meta-ads-ai --private --source . --remote origin --push
-```
-
-Si el repositorio ya existe, no lo reemplaces: revisá su contenido y conectá el remoto correcto. Nunca subir `.env`, bases de datos, tokens o archivos de clientes.
+La entrega inicial también incluyó un ZIP sin `.git`, dependencias ni datos de ejecución. Nunca subir `.env`, bases de datos, tokens o archivos de clientes. La visibilidad y los permisos del repositorio se administran en GitHub por separado de la aplicación demo.
 
 ## Mapa del repositorio
 
